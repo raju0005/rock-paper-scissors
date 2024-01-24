@@ -14,7 +14,7 @@ optionImages.forEach((image, index) => {
             index !== index2 && image2.classList.remove("active");
         });
          resultField.classList.add("start");
-        document.querySelector(".options-field").classList.add("start");
+         document.querySelector(".options-field").classList.add("start");
          
         let time = setTimeout(() => {
             resultField.classList.remove("start");
