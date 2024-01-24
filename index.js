@@ -8,7 +8,7 @@ optionImages.forEach((image, index) => {
     image.addEventListener("click", (e) => {
         image.classList.add("active");
 
-        userResult.src = cpuResult.src = "images/rock.png";
+        userResult.src = cpuResult.src = "https://res.cloudinary.com/dz44aff9v/image/upload/v1706027058/rock_bf1gqx.png";
         resultText.textContent = "Wait....";
         optionImages.forEach((image2, index2) => {
             index !== index2 && image2.classList.remove("active");
@@ -21,7 +21,7 @@ optionImages.forEach((image, index) => {
             let imageSrc = e.target.querySelector("img").src;
             userResult.src = imageSrc;
             let randomNum = Math.floor(Math.random() * 3);
-            let cpuImages = ["images/rock.png","images/paper.png" , "images/scissors.png"];
+          let cpuImages = ["https://res.cloudinary.com/dz44aff9v/image/upload/v1706027058/rock_bf1gqx.png","https://res.cloudinary.com/dz44aff9v/image/upload/v1706027057/paper_tcumux.png" , "https://res.cloudinary.com/dz44aff9v/image/upload/v1706027058/scissors_bnaqxr.png"];
             cpuResult.src= cpuImages[randomNum];
             let cpuValue = ["R", "P", "S"][randomNum];
             let userValue = ["R", "P", "S"][index];
