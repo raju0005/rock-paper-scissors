@@ -116,3 +116,14 @@ body {
 .start .options-field{
     pointer-events: none;
 }
+@media (max-width:480px){
+
+    .result-images {
+        display: flex;
+        justify-content: space-around;
+        column-gap: 50px;
+    }
+    .result-images img {
+        width: 80px;
+    }   
+}
