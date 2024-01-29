@@ -3,7 +3,11 @@ const userResult = document.querySelector(".user-result img");
 const cpuResult = document.querySelector(".cpu-result img");
 const resultText = document.querySelector(".result-text");
 const optionImages = document.querySelectorAll(" .option-logo");
-const resultField=document.querySelector(".result-field");
+const resultField = document.querySelector(".result-field");
+const userScore = document.querySelector(".user-score");
+const cpuScore = document.querySelector(".cpu-score");
+let Userscore = 0;
+let Cpuscore = 0;
 
 optionImages.forEach((image, index) => {
     image.addEventListener("click", (e) => {
@@ -14,18 +18,18 @@ optionImages.forEach((image, index) => {
         optionImages.forEach((image2, index2) => {
             index !== index2 && image2.classList.remove("active");
         });
-         resultField.classList.add("start");
-         document.querySelector(".options-field").classList.add("start");
-         
+        resultField.classList.add("start");
+        document.querySelector(".options-field").classList.add("start");
+
         let time = setTimeout(() => {
             resultField.classList.remove("start");
             document.querySelector(".options-field").classList.remove("start");
-            
+
             let imageSrc = e.target.querySelector("img").src;
             userResult.src = imageSrc;
             let randomNum = Math.floor(Math.random() * 3);
-            let cpuImages = ["https://res.cloudinary.com/dz44aff9v/image/upload/v1706521123/Picsart_24-01-29_15-04-50-045_wcq6lm.jpg","https://res.cloudinary.com/dz44aff9v/image/upload/v1706521123/Picsart_24-01-29_15-05-29-353_u3nqxb.jpg" ,"https://res.cloudinary.com/dz44aff9v/image/upload/v1706522327/Picsart_24-01-29_15-27-59-139_ruulsr.jpg"];
-            cpuResult.src= cpuImages[randomNum];
+            let cpuImages = ["https://res.cloudinary.com/dz44aff9v/image/upload/v1706521123/Picsart_24-01-29_15-04-50-045_wcq6lm.jpg", "https://res.cloudinary.com/dz44aff9v/image/upload/v1706521123/Picsart_24-01-29_15-05-29-353_u3nqxb.jpg", "https://res.cloudinary.com/dz44aff9v/image/upload/v1706522327/Picsart_24-01-29_15-27-59-139_ruulsr.jpg"];
+            cpuResult.src = cpuImages[randomNum];
             let cpuValue = ["R", "P", "S"][randomNum];
             let userValue = ["R", "P", "S"][index];
             let outcomes = {
@@ -48,9 +52,27 @@ optionImages.forEach((image, index) => {
             else {
                 resultMessage = `${outcomeValue}!!`;
             }
-            resultText.textContent=resultMessage;
+            resultText.textContent = resultMessage;
+            let score = outcomeValue;
+            if (score === "Cpu Won") {
+                Cpuscore++;
 
-        } ,2500);
+
+            }
+            else if (score === "You Won") {
+                Userscore++;
+
+            }
+            cpuScore.textContent = Cpuscore;
+            userScore.textContent = Userscore;
+
+
+        }, 2500);
+
+
+
+
+        console.log(cpuScore);
 
     });
 });
