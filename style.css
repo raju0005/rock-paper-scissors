@@ -162,6 +162,7 @@ body {
         display: flex;
         flex-direction: column;
         gap:5px;
+        height:80vh;
     }
 
     .result-images {
