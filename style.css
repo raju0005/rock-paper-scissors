@@ -166,7 +166,7 @@ body {
         height:100vh;
     }
     .game-pad {
-        max-height: 1000px;
+        height:auto;
         height:60%;
     
     }
