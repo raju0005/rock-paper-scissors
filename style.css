@@ -33,6 +33,11 @@ body {
     text-align: center;
 }
 
+.score-pad {
+    font-size: 50px;
+    text-align: center;
+}
+
 .game-pad {
   
     width: 80%;
@@ -158,22 +163,17 @@ body {
         display: flex;
         flex-direction: column;
         gap:7px;
-       
-        
+        height:100vh;
+        margin:-50px;
     }
     .game-pad {
-        height:auto;
+        max-height: 1000px;
         height:60%;
-        padding:30px 20px;
-        
     
     }
-     .score {
-        padding: 20px; 
-        font-size: 30px;
+    .score{
+        padding: 30px 10px;
     }
-    
-
 
     .result-images {
         display: flex;
