@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -79,7 +80,8 @@ body {
 .option-logo:hover {
     opacity: 1;
 }
-.option-logo.active{
+
+.option-logo.active {
     opacity: 1;
 }
 
@@ -89,7 +91,7 @@ body {
     margin-top: 3px;
 }
 
-.option-logo .paper-img{
+.option-logo .paper-img {
     width: 65px;
     pointer-events: none;
     margin-top: 3px;
@@ -111,7 +113,7 @@ body {
 
 }
 
-.result-field.start  .user-result {
+.result-field.start .user-result {
     transform-origin: left;
     animation: userShake 0.7s ease infinite;
 }
@@ -132,20 +134,52 @@ body {
         transform: rotate(-10deg);
     }
 }
- .options-field.start{
+
+.options-field.start {
     pointer-events: none;
 }
-@media (max-width:480px){
+
+@media (max-width:500px) {
 
     .result-images {
         display: flex;
         justify-content: space-around;
         column-gap: 50px;
     }
+
     .result-images img {
         width: 80px;
     }
-    
-    
+
+
+    .option-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0.5;
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+        border: solid #000000 3px;
+        border-radius: 15px;
+        padding: 10px;
+        column-gap: 10px;
+    }
+
+    .option-logo .rock-img {
+        width: 40px;
+        margin-top: 3px;
+    }
+
+    .option-logo .paper-img {
+        width: 40px;
+        margin-top: 3px;
+    }
+
+    .option-logo .scissor-img {
+        width: 35px;
+        margin-top: 2px;
+    }
+
+
 
 }
