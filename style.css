@@ -39,6 +39,7 @@ body {
 }
 
 .game-pad {
+  
     width: 80%;
     max-width: 1000px;
     border-radius: 15px;
@@ -161,9 +162,16 @@ body {
     body {
         display: flex;
         flex-direction: column;
-        gap:5px;
-        height:80vh;
+        gap:7px;
+        height:100vh;
     }
+    .game-pad {
+        max-height: 1000px;
+        height:60%;
+    
+    }
+    
+
 
     .result-images {
         display: flex;
