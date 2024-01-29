@@ -163,6 +163,8 @@ body {
     .game-pad {
         height:auto;
         height:60%;
+        padding:35px 20px;
+        
     
     }
      .score {
