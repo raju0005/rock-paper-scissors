@@ -165,6 +165,7 @@ body {
         gap:7px;
         height:100vh;
         margin:-50px;
+        padding-top:25px;
     }
     .game-pad {
         padding:30px 10px;
