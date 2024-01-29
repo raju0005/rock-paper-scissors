@@ -113,7 +113,7 @@ body {
         transform: rotate(-10deg);
     }
 }
-.options-field.start{
+ .options-field.start{
     pointer-events: none;
 }
 @media (max-width:480px){
@@ -125,5 +125,8 @@ body {
     }
     .result-images img {
         width: 80px;
-    }   
+    }
+    
+    
+
 }
