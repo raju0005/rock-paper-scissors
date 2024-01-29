@@ -13,11 +13,29 @@ body {
     justify-content: center;
     height: 100vh;
     text-transform: uppercase;
+    column-gap: 60px;
 }
 
 ::selection {
     color: #fff;
     background-color: #7d2ae8;
+}
+
+.score {
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.1);
+    padding: 45px 20px;
+
+}
+
+.score p {
+    font-size: 50px;
+    text-align: center;
+}
+
+.score-pad {
+    font-size: 50px;
+    text-align: center;
 }
 
 .game-pad {
@@ -140,6 +158,10 @@ body {
 }
 
 @media (max-width:500px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
 
     .result-images {
         display: flex;
