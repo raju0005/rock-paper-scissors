@@ -33,11 +33,6 @@ body {
     text-align: center;
 }
 
-.score-pad {
-    font-size: 50px;
-    text-align: center;
-}
-
 .game-pad {
   
     width: 80%;
@@ -169,6 +164,10 @@ body {
         height:auto;
         height:60%;
     
+    }
+     .score {
+        padding: 20px; 
+        font-size: 30px;
     }
     
 
