@@ -51,7 +51,7 @@ body {
 }
 
 .result-text {
-    color: black;
+    color: #000000;
     text-align: center;
     margin: 4rem 0;
     font-size: 40px;
@@ -71,7 +71,7 @@ body {
     opacity: 0.5;
     cursor: pointer;
     transition: opacity 0.3s ease;
-    border: solid black 3px;
+    border: solid #000000 3px;
     border-radius: 15px;
     padding: 10px;
 }
@@ -103,138 +103,7 @@ body {
 
 
 .option-logo p {
-    color: black;
-    text-align: center;
-    margin: 1rem 0;
-    font-size: 20px;
-    pointer-events: none;
-
-}
-
-.result-field.start  .user-result {
-    transform-origin: left;
-    animation: userShake 0.7s ease infinite;
-}
-
-@keyframes userShake {
-    50% {
-        transform: rotate(10deg)
-    }
-}
-
-.result-field.start .cpu-result {
-    transform-origin: right;
-    animation: cpuShake 0.7s ease infinite;
-}
-
-@keyframes cpuShake {
-    50% {
-        transform: rotate(-10deg);
-    }
-}
- .options-field.start{
-    pointer-events: none;
-}
-@media (max-width:480px){
-
-    .result-images {
-        display: flex;
-        justify-content: space-around;
-        column-gap: 50px;
-    }
-    .result-images img {
-        width: 80px;
-    }
-    
-    
-
-}* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-transform: uppercase;
-}
-
-::selection {
-    color: #fff;
-    background-color: #7d2ae8;
-}
-
-.game-pad {
-    width: 80%;
-    max-width: 1000px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(10, 10, 10, 0.1);
-    padding: 45px 20px;
-
-}
-
-.result-field {
-    padding: 0.5rem 2rem;
-}
-
-.result-images {
-    display: flex;
-    justify-content: space-around;
-}
-
-.result-images img {
-    width: 100px;
-}
-
-.user-result img {
-    transform: rotate(90deg);
-
-}
-
-.cpu-result img {
-    transform: rotate(90deg) rotateX(180deg);
-}
-
-.result-text {
-    color: blueviolet;
-    text-align: center;
-    margin: 4rem 0;
-    font-size: 40px;
-    font-weight: bolder;
-}
-
-.options-field {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.option-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 0.5;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-}
-
-.option-logo:hover {
-    opacity: 1;
-}
-.option-logo.active{
-    opacity: 1;
-}
-
-.option-logo img {
-    width: 50px;
-    pointer-events: none;
-}
-
-.option-logo p {
-    color: blueviolet;
+    color: #000000;
     text-align: center;
     margin: 1rem 0;
     font-size: 20px;
